@@ -1,0 +1,62 @@
+@font-face{
+    font-family: 'rima1';
+    src: url(./JMH\ Typewriter.ttf);
+}
+
+@font-face {
+    font-family: 'rima2';
+    src: url(./OldNewspaperTypes.ttf);
+}
+
+@font-face {
+    font-family: 'rima3';
+    src: url(./Kingthings\ Trypewriter\ 2.ttf);
+}
+
+div{
+    text-align: left;
+}
+
+div#rimas{
+    background-color:rgb(33, 32, 32);
+    border-radius: 100px;
+    border-style: solid;
+    border-color: beige;
+
+}
+
+body{
+    background-image: url(../img/6085221.jpg);
+}
+
+h1{
+    text-align: center;
+    color: azure;
+    text-decoration: underline;
+    background-color: rgb(24, 24, 24);
+}
+
+.rima1{
+    font-family: 'rima1';
+    color: azure;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+.rima2{
+    font-family: 'rima2';
+    color: azure;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+.rima3{
+    font-family: 'rima3';
+    color: azure;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(44, 45, 45);
+    font-style: oblique;
+}
+
+ul{
+    background-color: azure;
+    border-radius: 40px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    list-style: none;
+}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'linea1';
+    src: url(../font/Spongeboy\ Me\ Bob.ttf);
+}
+
+@font-face {
+    font-family: 'linea2';
+    src: url(../font/Gummy\ Bears.ttf);
+}
+
+@font-face {
+    font-family: 'linea3';
+    src: url(../font/Hello\ Molly.otf);
+}
+
+@font-face {
+    font-family: 'linea4';
+    src: url(../font/Fruit\ Days.ttf);
+}
+
+@font-face {
+    font-family: 'linea5';
+    src: url(../font/CHICKEN\ Pie.ttf);
+}
+
+body{
+    background-image: url(../img/6757291.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  font-family: Impact;
+  font-weight: 200;
+  font-size: 40pt;
+}
+
+div#parrafos{
+    background-color: antiquewhite;
+    border-radius: 80px;
+    border-style: dotted;
+    border-color: black;
+}
+
+p{
+    text-align: center;
+    font-size: 70pt;
+}
+
+.linea1{
+    font-family: 'linea1';
+    color: blueviolet;
+}
+
+.linea2{
+    font-family: 'linea2';
+    color: green;
+}
+
+.linea3{
+    font-family: 'linea3';
+    color: blue;
+}
+
+.linea4{
+    font-family: 'linea4';
+    color: orange;
+}
+
+.linea5{
+    font-family: 'linea5';
+    color: palegreen;
+}

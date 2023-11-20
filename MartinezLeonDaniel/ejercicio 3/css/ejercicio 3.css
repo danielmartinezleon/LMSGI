@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+div{
+    text-align: center;
+}
+
+div#datos{
+    background-color: bisque;
+    border-radius: 40px;
+    border-style: dashed;
+    border-color: black;
+}
+
+.centro{
+    text-align: center;
+    text-transform: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(106, 135, 220);
+}
+
+pre{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    margin: 15px;
+    background-color: rgb(158, 199, 185);
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+span{
+    font-size: 25pt;
+}

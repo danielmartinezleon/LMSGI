@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    background-color: rgb(205, 44, 44);
+    color: white;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+ol {
+    text-transform: uppercase;
+    background-color: aquamarine;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+img{
+    border-radius: 40px;
+    display: block;
+    border-style: dotted;
+    border-color: black;
+}

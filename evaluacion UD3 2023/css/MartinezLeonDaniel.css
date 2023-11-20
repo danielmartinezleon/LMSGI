@@ -1,0 +1,45 @@
+@font-face{
+    font-family: 'subtitulo';
+    src: url(../fonts/UrbanElegance.ttf);
+}
+body{
+    background-color: rgb(242, 242, 242);
+}
+h1{
+    color: rgb(0, 68, 98);
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: Helvetica, 'Comic Sans MS', sans-serif;
+    letter-spacing: 0.3em;
+}
+
+h2{
+    font-family: 'subtitulo', sans-serif;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: rgb(114, 114, 114);
+}
+
+p#fecha{
+    font-variant: small-caps;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: rgb(142, 142, 142);
+    text-align: right;
+    letter-spacing: -0.5px;
+}
+
+div#imagen{
+    text-align: center;
+}
+
+p{
+    font-family: 'Times New Roman', Verdana, Georgia, serif;
+    font-size: 0.95em;
+    color: rgb(124, 124, 124);
+}
+
+span{
+    font-style: italic;
+    
+}
