@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 8</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+            form{
+            width: fit-content;
+            margin: auto;
+            padding: 10px 30px;
+            }
+
+            fieldset, legend{
+            background-color: #ffca58d6;
+            }
+
+            body{
+            background-image: url(../img/fondo.png);
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Formulario de reserva</legend>
+
+                <label for="nhuespedes">Número de huéspedes</label>
+                <input type="number" name="nhuespedes" id="nhuespedes" min="1" max="6" step="1" size="2" value="1"><br><br>
+                <label for="fentrada">Fecha entrada</label><br>
+                <input type="date" name="fentrada" id="fentrada" min="2023-01-01" max="2023-01-01"><br><br>
+                <label for="fsalida">Fecha salida</label><br>
+                <input type="date" name="fsalidaa" id="fsalida" min="2023-01-01" max="2023-12-31"><br><br>
+                <label for="room">Tipo de habitación</label><br>
+                <select name="room" id="room" multiple size="3">
+                    <option value="ind">Individual</option>
+                    <option value="dbl">Doble</option>
+                    <option value="2ci">2 camas individuales</option>
+                </select><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email"><br><br>
+
+                <input type="submit" name="enviar" value="Hacer reserva">
+
+            </fieldset>
+        </form>
+    </body>
+</html>

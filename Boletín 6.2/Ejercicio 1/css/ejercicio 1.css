@@ -1,0 +1,12 @@
+form{
+    width: fit-content;
+    margin: auto;
+}
+
+fieldset, legend{
+    background-color: aqua;
+}
+
+legend{
+    border: 1px black solid;
+}
