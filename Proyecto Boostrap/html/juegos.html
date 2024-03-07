@@ -8,10 +8,10 @@
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
     </style>
-    <title>Todojuegos</title>
+    <title>Juegos PC - Todojuegos</title>
 </head>
-<body>
-    <header>
+<body class="d-flex flex-column vh-100">
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../html/index.html">
@@ -26,10 +26,10 @@
                             <a class="nav-link text-white" href="../html/juegos.html">JUEGOS PC</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="javascript:void(0)">JUEGOS PS5</a>
+                            <a class="nav-link text-white" href="./faq.html">PREGUNTAS FRECUENTES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="javascript:void(0)">JUEGOS XBOX SERIES X</a>
+                            <a class="nav-link text-white" href="./envios.html">PRECIOS ENVÍOS</a>
                         </li>
                     </ul>
                     <form class="d-flex mx-auto">
@@ -37,6 +37,8 @@
                         <button class="btn btn-primary" type="button">Buscar</button>
                     </form>
                     <button class="btn btn-light ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLoginForm">LOGIN</button>
+                    <!-- Botón para ir al carrito -->
+                    <a class="btn btn-light ms-2" href="./carro.html"><i class="bi bi-cart"></i></a>
                 </div>
             </div>
         </nav>
@@ -62,227 +64,199 @@
                 </form>
             </div>
         </div>
-        
-        
-        
     </header>
-
-    <div class="container">
-        <h3 class="mt-5">JUEGOS</h3>
-        <div class="row row-cols-1 row-cols-md-5 g-4">
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/new_project_-_2023-10-02t111721.509_1.jpg" class="card-img-top img-fluid" alt="juego-uno" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Helldivers 2</h5>
-                        <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
-                        <p class="precio">39,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="container">
+            <h3 class="mt-5">JUEGOS</h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/5.jpg" class="card-img-top img-fluid" alt="juego-uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Helldivers 2</h5>
+                            <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
+                            <p class="precio">39,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light bg-light">
+                        <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos">
+                        <div class="card-body">
+                            <h5 class="card-title">Blasphemous 2</h5>
+                            <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
+                            <p class="precio">29,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/4.jpg" class="card-img-top img-fluid" alt="juego-tres">
+                        <div class="card-body">
+                            <h5 class="card-title">Overcooked 2</h5>
+                            <p class="card-text">¡Vuelve Overcooked con una buena y caótica ración de acción culinaria!</p>
+                            <p class="precio">24,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/5.jpg" class="card-img-top img-fluid" alt="juego-uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Helldivers 2</h5>
+                            <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
+                            <p class="precio">39,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos">
+                        <div class="card-body">
+                            <h5 class="card-title">Blasphemous 2</h5>
+                            <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
+                            <p class="precio">29,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Blasphemous 2</h5>
-                        <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
-                        <p class="precio">29,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/5.jpg" class="card-img-top img-fluid" alt="juego-uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Helldivers 2</h5>
+                            <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
+                            <p class="precio">39,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos">
+                        <div class="card-body">
+                            <h5 class="card-title">Blasphemous 2</h5>
+                            <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
+                            <p class="precio">29,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/4.jpg" class="card-img-top img-fluid" alt="juego-tres">
+                        <div class="card-body">
+                            <h5 class="card-title">Overcooked 2</h5>
+                            <p class="card-text">¡Vuelve Overcooked con una buena y caótica ración de acción culinaria!</p>
+                            <p class="precio">24,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/5.jpg" class="card-img-top img-fluid" alt="juego-uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Helldivers 2</h5>
+                            <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
+                            <p class="precio">39,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos">
+                        <div class="card-body">
+                            <h5 class="card-title">Blasphemous 2</h5>
+                            <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
+                            <p class="precio">29,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/egs-overcooked2-tall_1200x1600-fbae89fad70c05cd1979316f620e64a9.jpg" class="card-img-top img-fluid" alt="juego-tres" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Overcooked 2</h5>
-                        <p class="card-text">¡Vuelve Overcooked con una buena y caótica ración de acción culinaria!</p>
-                        <p class="precio">24,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/5.jpg" class="card-img-top img-fluid" alt="juego-uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Helldivers 2</h5>
+                            <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
+                            <p class="precio">39,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/new_project_-_2023-10-02t111721.509_1.jpg" class="card-img-top img-fluid" alt="juego-uno" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Helldivers 2</h5>
-                        <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
-                        <p class="precio">39,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos">
+                        <div class="card-body">
+                            <h5 class="card-title">Blasphemous 2</h5>
+                            <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
+                            <p class="precio">29,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Blasphemous 2</h5>
-                        <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
-                        <p class="precio">29,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/4.jpg" class="card-img-top img-fluid" alt="juego-tres">
+                        <div class="card-body">
+                            <h5 class="card-title">Overcooked 2</h5>
+                            <p class="card-text">¡Vuelve Overcooked con una buena y caótica ración de acción culinaria!</p>
+                            <p class="precio">24,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/5.jpg" class="card-img-top img-fluid" alt="juego-uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Helldivers 2</h5>
+                            <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
+                            <p class="precio">39,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-3 bg-light">
+                        <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos">
+                        <div class="card-body">
+                            <h5 class="card-title">Blasphemous 2</h5>
+                            <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
+                            <p class="precio">29,90€</p>
+                            <button class="btn btn-success">Añadir a mi cesta</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-5 g-4">
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/new_project_-_2023-10-02t111721.509_1.jpg" class="card-img-top img-fluid" alt="juego-uno" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Helldivers 2</h5>
-                        <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
-                        <p class="precio">39,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Blasphemous 2</h5>
-                        <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
-                        <p class="precio">29,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/egs-overcooked2-tall_1200x1600-fbae89fad70c05cd1979316f620e64a9.jpg" class="card-img-top img-fluid" alt="juego-tres" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Overcooked 2</h5>
-                        <p class="card-text">¡Vuelve Overcooked con una buena y caótica ración de acción culinaria!</p>
-                        <p class="precio">24,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/new_project_-_2023-10-02t111721.509_1.jpg" class="card-img-top img-fluid" alt="juego-uno" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Helldivers 2</h5>
-                        <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
-                        <p class="precio">39,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Blasphemous 2</h5>
-                        <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
-                        <p class="precio">29,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-5 g-4">
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/new_project_-_2023-10-02t111721.509_1.jpg" class="card-img-top img-fluid" alt="juego-uno" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Helldivers 2</h5>
-                        <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
-                        <p class="precio">39,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Blasphemous 2</h5>
-                        <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
-                        <p class="precio">29,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/egs-overcooked2-tall_1200x1600-fbae89fad70c05cd1979316f620e64a9.jpg" class="card-img-top img-fluid" alt="juego-tres" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Overcooked 2</h5>
-                        <p class="card-text">¡Vuelve Overcooked con una buena y caótica ración de acción culinaria!</p>
-                        <p class="precio">24,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/new_project_-_2023-10-02t111721.509_1.jpg" class="card-img-top img-fluid" alt="juego-uno" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Helldivers 2</h5>
-                        <p class="card-text">Conquista toda la galaxia por la democracia</p><br>
-                        <p class="precio">39,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 248px;">
-                    <img src="../img/blasphemous_sequel-5801325.webp" class="card-img-top img-fluid" alt="juego-dos" style="height: 350px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Blasphemous 2</h5>
-                        <p class="card-text">Vuelve a encarnar al penitente en la secuela del afamado INDIE Sevillano</p>
-                        <p class="precio">29,90€</p>
-                        <button class="btn btn-success">Añadir a mi cesta</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
     
-
     <footer class="bg-light text-center text-white">
-        <!-- Grid container -->
         <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
             <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <!-- Twitter -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <!-- Google -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button">
-                    <i class="bi bi-google"></i>
-                </a>
-                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button">
-                    <i class="bi bi-github"></i>
-                </a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i class="bi bi-google"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i class="bi bi-github"></i></a>
             </section>
-            <!-- Section: Social media -->
         </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgb(0, 0, 0);">
             © 2024 Copyright:
             <a class="text-white" href="">Daniel Martínez</a>
         </div>
-        <!-- Copyright -->
     </footer>
 </body>
 </html>
