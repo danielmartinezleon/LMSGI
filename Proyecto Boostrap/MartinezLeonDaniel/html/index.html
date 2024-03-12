@@ -7,23 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-        body {
-            background-image: url(../img/04decaa4136cc71a1879a2800bb5d0d6.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-bottom: 100px;
-        }
 
-        .registro{
-            background-color: rgba(255, 255, 255, 0.805);
-            border-radius: 20px;
-            border: 3px blue solid;
-            
+        html {
+            position: relative;
+            min-height: 100%;
         }
-
+        
+        
     </style>
-    <title>Formulario de Registro</title>
+    <title>Todojuegos</title>
 </head>
 <body class="d-flex flex-column vh-100">
     <header class="fixed-top">
@@ -82,51 +74,56 @@
             </div>
         </div>
     </header>
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <!-- Carousel -->
+        <div class="carousel-container my-3 container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-12 mx-auto">
+                    <!-- Carousel -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
     
-    <main class="flex-grow-1" style="margin-top: 56px;">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+    
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/1.jpg" width="100%" alt="Blasphemous" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/2.jpg" width="100%" alt="Overcooked" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/3.jpg" width="100%" alt="Helldivers" class="d-block w-100">
+                            </div>
+                        </div>
+    
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container mt-5">
-            <form class="col-12 col-lg-6 registro" style="margin: 0 auto; padding: 20px;">
-                <h2 class="text-center mb-4">Registro</h2>
-                <fieldset>
-                    <legend class="text-center">Completa tus datos</legend>
-                    <div class="mb-3">
-                        <label for="fullName" class="form-label">Nombre completo:</label>
-                        <input type="text" class="form-control" id="fullName" name="fullName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Nombre de usuario:</label>
-                        <input type="text" class="form-control" id="username" name="username" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirmEmail" class="form-label">Confirmar correo electrónico:</label>
-                        <input type="email" class="form-control" id="confirmEmail" name="confirmEmail" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña:</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirmPassword" class="form-label">Confirmar contraseña:</label>
-                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
-                    </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" value="" id="term" required>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            He leído y acepto los términos y condiciones de uso
-                        </label>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-sm">Registrarse</button>
-                    </div>
-                </fieldset>
-            </form>
+            <h2 class="text-center">¡Bienvenido a Todojuegos!</h2>
+            <p class="lead text-center">Sumérgete en un mundo lleno de emociones y aventuras con nuestra amplia selección de videojuegos. En Todojuegos, no solo te ofrecemos los títulos más populares del momento, sino también una variedad que satisface todos los gustos y edades.</p>
+            <p class="lead text-center">Desde los clásicos que marcaron época hasta las últimas novedades que te dejarán sin aliento, estamos aquí para asegurarnos de que encuentres exactamente lo que buscas. Navega por nuestro catálogo con facilidad y descubre una experiencia de compra sin igual.</p>
+            <p class="lead text-center">Además, en Todojuegos nos preocupamos por proporcionarte el mejor servicio. Nuestro equipo está siempre dispuesto a ayudarte en todo lo que necesites, desde recomendaciones sobre juegos hasta asistencia técnica.</p>
+            <p class="lead text-center">Ya seas un veterano en el mundo del gaming o estés dando tus primeros pasos, en Todojuegos encontrarás tu lugar. Prepárate para vivir emociones sin límites y descubrir nuevos mundos junto a nosotros.</p>
+            <p class="lead text-center">¡Bienvenido a la comunidad de Todojuegos, donde la diversión nunca termina!</p>
         </div>
     </main>
-    
-    
+
     <footer class="bg-light text-center text-white">
         <div class="container-fluid p-4 pb-0">
             <section class="mb-4">
@@ -156,4 +153,12 @@
         </div>
     </footer>
 </body>
+<script>
+	document.querySelector('#btnOscuro').addEventListener('click',cambiarModo);
+	let sigTema = 'dark'
+	function cambiarModo() {		
+		document.documentElement.setAttribute('data-bs-theme',sigTema);
+		sigTema = sigTema=='dark'?'light':'dark';
+	}
+</script>
 </html>

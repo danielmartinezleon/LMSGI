@@ -7,25 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-        body {
-            background-image: url(../img/04decaa4136cc71a1879a2800bb5d0d6.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-bottom: 100px;
-        }
 
-        .registro{
-            background-color: rgba(255, 255, 255, 0.805);
-            border-radius: 20px;
-            border: 3px blue solid;
-            
+        html {
+            position: relative;
+            min-height: 100%;
         }
-
+        
+        
     </style>
-    <title>Formulario de Registro</title>
+    <title>Tipos de Envíos y Precios - Todojuegos</title>
 </head>
-<body class="d-flex flex-column vh-100">
+<body class="d-flex flex-column min-vh-100">
     <header class="fixed-top">
         <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
             <div class="container-fluid">
@@ -83,50 +75,40 @@
         </div>
     </header>
     
-    <main class="flex-grow-1" style="margin-top: 56px;">
+    <main class="flex-grow-1" style="margin-top: 100px;">
         <div class="container mt-5">
-            <form class="col-12 col-lg-6 registro" style="margin: 0 auto; padding: 20px;">
-                <h2 class="text-center mb-4">Registro</h2>
-                <fieldset>
-                    <legend class="text-center">Completa tus datos</legend>
-                    <div class="mb-3">
-                        <label for="fullName" class="form-label">Nombre completo:</label>
-                        <input type="text" class="form-control" id="fullName" name="fullName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Nombre de usuario:</label>
-                        <input type="text" class="form-control" id="username" name="username" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirmEmail" class="form-label">Confirmar correo electrónico:</label>
-                        <input type="email" class="form-control" id="confirmEmail" name="confirmEmail" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña:</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirmPassword" class="form-label">Confirmar contraseña:</label>
-                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
-                    </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" value="" id="term" required>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            He leído y acepto los términos y condiciones de uso
-                        </label>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-sm">Registrarse</button>
-                    </div>
-                </fieldset>
-            </form>
+            <h1 class="text-center">Tipos de Envíos y Precios</h1>
+            <div class="table-responsive">
+                <table class="table table-striped mt-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo de Envío</th>
+                            <th scope="col">Península</th>
+                            <th scope="col">Canarias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Envío Estándar</td>
+                            <td>€5.99</td>
+                            <td>€9.99</td>
+                        </tr>
+                        <tr>
+                            <td>Envío Express</td>
+                            <td>€9.99</td>
+                            <td>€14.99</td>
+                        </tr>
+                        <tr>
+                            <td>Recogida en Tienda</td>
+                            <td>Gratis</td>
+                            <td>Gratis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
-    
-    
+
     <footer class="bg-light text-center text-white">
         <div class="container-fluid p-4 pb-0">
             <section class="mb-4">
@@ -155,5 +137,14 @@
             </div>
         </div>
     </footer>
+    
 </body>
+<script>
+	document.querySelector('#btnOscuro').addEventListener('click',cambiarModo);
+	let sigTema = 'dark'
+	function cambiarModo() {		
+		document.documentElement.setAttribute('data-bs-theme',sigTema);
+		sigTema = sigTema=='dark'?'light':'dark';
+	}
+</script>
 </html>
